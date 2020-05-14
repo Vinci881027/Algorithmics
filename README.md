@@ -36,14 +36,15 @@ e 1101
 f 1100  
 ```
 # hw5
-![image](https://github.com/Vinci881027/Algorithmics/blob/master/img/picturemessage_rfxlrkjf.zbe.png)
 ```
 Given an undirected graph G(V,E), determine whether there is a Eulerian Circuit in G.  
 If there is a Eulerian Circuit in G, Output the first lexicographical order(字典序) circuit
 else, Output "not exist"  
 |V| <= 1000 , |E| <= 100000  
 Example:  
-
+```
+![image](https://github.com/Vinci881027/Algorithmics/blob/master/img/picturemessage_rfxlrkjf.zbe.png)
+```
 Input: first line contains two integers |V| and |E|, following |E| lines are the edge(u,v) ∈ G  
 12 16  
 1 2  
