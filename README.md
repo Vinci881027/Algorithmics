@@ -35,3 +35,32 @@ d 111
 e 1101  
 f 1100  
 ```
+# hw5
+```
+Given an undirected graph G(V,E), determine whether there is a Eulerian Circuit in G.  
+If there is a Eulerian Circuit in G, Output the first lexicographical order(字典序) circuit
+else, Output "not exist"  
+|V| <= 1000 , |E| <= 100000  
+Example:  
+
+Input: first line contains two integers |V| and |E|, following |E| lines are the edge(u,v) ∈ G  
+12 16  
+1 2  
+1 4  
+2 5  
+3 4  
+4 5  
+5 6  
+3 7  
+4 8  
+5 9  
+6 10  
+7 8  
+8 9  
+9 10  
+8 11  
+9 12  
+11 12  
+Output: the first lexicographical order Eulerian circuit if exists, "not exist" if not exists  
+1 2 5 4 3 7 8 9 5 6 10 9 12 11 8 4 1  
+```
