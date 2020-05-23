@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 vector<int> circuit;
@@ -51,6 +52,7 @@ int main()
         adj[v2].push_back(v1);
     }
     for(int i = 1; i <= V; i++){
+        sort(adj[i].begin(), adj[i].end());
         if(adj[i].size() % 2)
             evenDegree = false;
         DFSvisit[i] = false;
