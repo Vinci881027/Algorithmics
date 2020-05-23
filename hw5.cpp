@@ -57,25 +57,23 @@ int main()
             evenDegree = false;
         DFSvisit[i] = false;
     }
-    if(evenDegree){
-        DFS(adj, DFSvisit, 1);
-        for(int i = 1; i <= V; i++){
-            if(DFSvisit[i] == false)
-                connect = false;
+    DFS(adj, DFSvisit, 1);
+    for(int i = 1; i <= V; i++){
+        if(DFSvisit[i] == false)
+            connect = false;
+    }
+    if(evenDegree && connect){
+        EulerianCircuit(adj, visit, 1);
+        while(circuit.size() > 0){
+            rCircuit.push_back(circuit.back());
+            circuit.pop_back();
         }
-        if(connect){
-            EulerianCircuit(adj, visit, 1);
-            while(circuit.size() > 0){
-                rCircuit.push_back(circuit.back());
-                circuit.pop_back();
-            }
-            while(rCircuit.size() > 0){
-                cout << rCircuit.back() << " ";
-                rCircuit.pop_back();
-            }
-            cout << "1 ";
-            return 0;
+        while(rCircuit.size() > 0){
+            cout << rCircuit.back() << " ";
+            rCircuit.pop_back();
         }
+        cout << "1";
+        return 0;
     }
     cout << "not exist" << endl;
     return 0;
