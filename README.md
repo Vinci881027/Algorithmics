@@ -66,3 +66,29 @@ Input: first line contains two integers |V| and |E|, following |E| lines are the
 Output: the first lexicographical order Eulerian circuit if exists, "not exist" if not exists  
 1 2 5 4 3 7 8 9 5 6 10 9 12 11 8 4 1  
 ```
+# hw6
+```
+Given a simple undirected connected graph G, find the edge connectivity on G.  
+```
+![image](https://github.com/Vinci881027/Algorithmics/blob/master/img/123.png)
+```
+Input: first line contains two integers |V| and |E|, following |E| lines are the edge(u,v) ∈ G  
+8 14  
+1 2  
+1 3  
+1 4  
+2 3  
+2 4  
+2 5  
+3 4  
+4 7  
+5 6  
+5 7  
+5 8  
+6 7  
+6 8  
+7 8  
+  
+Output: a number represents edge connectivity.  
+2  
+```
