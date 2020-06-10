@@ -85,10 +85,10 @@ Input: first line contains two integers |V| and |E|, following |E| lines are the
 5 6  
 5 7  
 5 8  
-6 7  
-6 8  
-7 8  
-  
+6 7
+6 8
+7 8
+
 Output: a number represents edge connectivity.  
 2  
 ```
