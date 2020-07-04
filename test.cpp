@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a = 3;
-    auto a = "string";
-    cout << a;
+    int
+    cin >> i;
     return 0;
 }
